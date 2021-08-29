@@ -1,0 +1,34 @@
+.foto-list {
+    width: 100%; border-radius: 8px;
+}
+
+.div-content {
+    background-color: #dfdfdf !important;
+    border-radius: 8px !important;
+    padding: 13px !important;
+    margin: 5px !important;
+}
+
+.text-custom {
+    color: #18BBBA !important;
+}
+
+.text-link {
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+}
+.text-link:hover {
+    color: #18BBBA !important;
+}
+
+@media screen and (max-width: 799px) {
+    .super-mt {
+        margin-top: 190px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .super-mt {
+        margin-top: 150px;
+    }
+}
