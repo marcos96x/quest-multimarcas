@@ -30,7 +30,7 @@ As tecnologias utilizadas para este projeto são:
 
 ## Instruções para uso
 
-Considerando que você possua um servidor configurado com PHP em versão igual ou superior a 7.4, o SGBD Mysql instalado e um servidor como Apache, basta seguir os seguintes passos:
+Considerando que você possua um servidor configurado com PHP em versão igual ou superior a 7.4, o SGBD Mysql instalado e um servidor como Apache e Composer instalado, basta seguir os seguintes passos:
 
 - Criar uma base de dados com o nome "quest_multimarcas" ou caso queira um nome diferente, deverá também alterar o valor DB_DATABASE no arquivo .env (linha 13) da aplicação;
 - Certificar-se de que o valor DB_USERNAME e DB_PASSWORD no arquivo .env corresponde aos dados de um usuário mysql válido em seu ambiente;
@@ -46,6 +46,7 @@ Considerando que você possua um servidor configurado com PHP em versão igual o
 - Executar os comandos abaixos:
 
 ```
+    composer install // para instalar as dependências do Laravel
     php artisan migrate // para executar a migração dos dados para seu banco de dados
     npm install && npm run dev // para instalar dependências externas
     php artisan serve // para rodar a aplicação em seu servidor
