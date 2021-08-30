@@ -48,11 +48,11 @@
                         Entrar
                     </button>
                     <br>
-                    Ou
+                    {{-- Ou
                     <br>
                     <a href="{{ route('register') }}" class="ml-3 text-center btn btn-secondary btn-sm btn-block w-100 m-0">
                         Cadastre-se
-                    </a>
+                    </a> --}}
                 </div>
             </div>
         </form>

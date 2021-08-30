@@ -10,7 +10,6 @@ Sistema que realiza uma busca no site [Quest Multimarcas](https://www.questmulti
 
  O sistema conta com:
 
-- Cadastro de usuários Administrativo;
 - Login de usuários Administrativo;
 - Busca de carros através de palavra-chave;
 - Persistência dos dados em base de dado MYSQL;
