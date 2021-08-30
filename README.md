@@ -32,7 +32,7 @@ As tecnologias utilizadas para este projeto são:
 
 Considerando que você possua um servidor configurado com PHP em versão igual ou superior a 7.4, o SGBD Mysql instalado e um servidor como Apache, basta seguir os seguintes passos:
 
-- Criar uma base de dados com o nome "quest_scrapping" ou caso queira um nome diferente, deverá também alterar o valor DB_DATABASE no arquivo .env (linha 13) da aplicação;
+- Criar uma base de dados com o nome "quest_multimarcas" ou caso queira um nome diferente, deverá também alterar o valor DB_DATABASE no arquivo .env (linha 13) da aplicação;
 - Certificar-se de que o valor DB_USERNAME e DB_PASSWORD no arquivo .env corresponde aos dados de um usuário mysql válido em seu ambiente;
 - Clonar o repositório atual via terminal/cmd dentro de alguma pasta em seu servidor;
 - Entrar na pasta do repositório via terminal/cmd;
@@ -55,4 +55,4 @@ Após se registrar/logar, basta efetuar uma busca no campo abaixo para que seja 
 
 ![](resources/images/exemplo1.jpeg) 
 
-#### Na estrutura atual do projeto existe um dump de testes (database/dump/quest_scrapping.sql) caso queira iniciar a aplicação sem precisar rodar o comando php artisan migrate. O projeto não foi buildado para que seja observado com mais clareza o código escrito na aplicação.
+#### Na estrutura atual do projeto existe um dump de testes (database/dump/quest_multimarcas.sql) caso queira iniciar a aplicação sem precisar rodar o comando php artisan migrate. O projeto não foi buildado para que seja observado com mais clareza o código escrito na aplicação.
