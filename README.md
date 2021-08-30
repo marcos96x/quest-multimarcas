@@ -1,64 +1,49 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <a href="https://www.questmultimarcas.com.br/estoque" target="_blank">
+        <img src="https://static.autoconf.com.br/site-questmultimarcas/wp-content/uploads/2020/01/logo-quest.png" width="400">
+    </a>
 </p>
 
-## About Laravel
+# Quest Multimarcas - lista de carros através de busca
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Sistema que realiza uma busca no site [Quest Multimarcas](https://www.questmultimarcas.com.br), trazendo os carros pesquisados e salvando no banco de dados.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ O sistema conta com:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Cadastro de usuários Administrativo;
+- Login de usuários Administrativo;
+- Busca de carros através de palavra-chave;
+- Persistência dos dados em base de dado MYSQL;
+- Opção de remover os carros salvos;
+- Não permite salvar o mesmo carro no banco de dados.
 
-## Learning Laravel
+## Tecnologias utilizadas
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+As tecnologias utilizadas para este projeto são:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **[Apache](https://www.apache.org/)**
+- **[PHP](https://www.php.net/)**
+- **[Laravel](https://laravel.com/)**
+- **[Mysql](https://www.mysql.com/)**
+- **[Bootstrap](https://getbootstrap.com/)**
+- **[Jquery](https://jquery.com/)**
 
-## Laravel Sponsors
+## Instruções para uso
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Considerando que você possua um servidor configurado com PHP em versão igual ou superior a 7.4, o SGBD Mysql instalado e um servidor como Apache, basta seguir os seguintes passos:
 
-### Premium Partners
+- Criar uma base de dados com o nome "quest_scrapping" ou caso queira um nome diferente, deverá também alterar o valor DB_DATABASE no arquivo .env (linha 13) da aplicação;
+- Certificar-se de que o valor DB_USERNAME e DB_PASSWORD no arquivo .env corresponde aos dados de um usuário mysql válido em seu ambiente;
+- Clonar o repositório atual via terminal/cmd dentro de alguma pasta em seu servidor;
+- Entrar na pasta do repositório via terminal/cmd;
+- Executar os comandos abaixos:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+```
+    php artisan migrate // para executar a migração dos dados para seu banco de dados
+    npm install && npm run dev // para instalar dependências externas
+    php artisan serve // para rodar a aplicação em seu servidor
+```
 
-## Contributing
+Após se registrar/logar, basta efetuar uma busca no campo abaixo para que seja feita a captura de carros cujo filtro atende seu pedido
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![](resources/images/exemplo1.jpeg) 

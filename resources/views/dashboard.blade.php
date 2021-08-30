@@ -86,7 +86,7 @@
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-xs-12 col-md-6 col-lg-6">
                                                     <div class="div-content">
-                                                        <b>Combustível: </b> {{ $car->gasolina }}
+                                                        <b>Combustível: </b> {{ $car->combustivel }}
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-xs-12 col-md-6 col-lg-6">
@@ -107,8 +107,7 @@
 
                                                 <div class="col-12 mt-2 text-right">
                                                     <br>
-                                                    <h4><b>Preço: </b> <span class="text-custom">R$
-                                                            {{ $car->valor }}</span></h4>
+                                                    <h4><b>Preço: </b> <span class="text-custom">{{ $car->valor }}</span></h4>
                                                 </div>
                                             </div>
                                         </div>
